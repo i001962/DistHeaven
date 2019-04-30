@@ -17,11 +17,13 @@ D1 = 100
 - The nice thing about HDR1 is that it fits into one cell and works nicely with Excel's data table.
 
 
-## Read other resources and learn how to debug add-ins here:
-https://app.memphis.io/publish/Creating-Excel-Js-API-Taskpanel-Add-in-with-React/5cbe79f8af1274057ac0d3ad
-
 ### Based on
 https://docs.microsoft.com/en-us/office/dev/add-ins/quickstarts/excel-quickstart-react
 
 ## SIPMath Compatible
 To use these distributions and their trails in SIPMath models, you will need to manually set named ranges in Excel. Add PM_Trials named range in cell A1. Then also create ranges for each distribution. Those named ranges should each contain all of the trials for a given distribution. Start in cell C4 and go down then move to D4 and create another named range. Save that workbook and then use it as and Input Library in SIPMath Tools from https://ProbabilityManagement.org The named ranges are necessary during the input process in SIPMath Tools. You may use these distributions without SIPMath Tools by simply creating a data table. Here are some useful learning resources https://app.memphis.io/publish/SIP-Math/5cc1edd2af1274057ac0d4ca
+
+## TODOs are found in app.tsx
+
+## Publish, Deploy and learn more here
+https://app.memphis.io/publish/Creating-Excel-Js-API-Taskpanel-Add-in-with-React/5cbe79f8af1274057ac0d3ad
