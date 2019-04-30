@@ -17,7 +17,7 @@ D1 = 100
 - The nice thing about HDR1 is that it fits into one cell and works nicely with Excel's data table.
 
 
-## Read other resources and learn how debug add-ins here:
+## Read other resources and learn how to debug add-ins here:
 https://app.memphis.io/publish/Creating-Excel-Js-API-Taskpanel-Add-in-with-React/5cbe79f8af1274057ac0d3ad
 
 ### Based on
