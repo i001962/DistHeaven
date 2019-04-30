@@ -51,7 +51,7 @@ export default class App extends React.Component<AppProps, AppState> {
       await Excel.run(async context => {
         // console.log("this is it");
         var newsheets = context.workbook.worksheets;
-        var newsheet = newsheets.add("PMTable");
+        var newsheet = newsheets.add("PM_Table");
         newsheet.load("name, position");
         await context.sync();
 
@@ -123,7 +123,7 @@ export default class App extends React.Component<AppProps, AppState> {
         await context.sync();
 
         range = sheettest.getRange("A1:E1");
-        range.values = [[1, "Seeds", "Unknown", "Unknown", 6818051]]
+        range.values = [[trialsInput, "Seeds", "Unknown", "Unknown", 6818051]]
         await context.sync();
 
         range = sheettest.getRange("B2:E2");
@@ -139,9 +139,10 @@ export default class App extends React.Component<AppProps, AppState> {
         await context.sync();
 
         range = sheettest.getRange("B3:D3");
-        // TO DO NEED TO BUILD THIS FROM INPUTS
-        range.values = [["Values", "=VLOOKUP(A1,B4:C13,2,)", "=VLOOKUP($A$1,B4:D13,3,)"]]
-        await context.sync();
+        // TODO Ideally the PM_Table sheet could create ranges and be used in generation model of SIPMath Tools.
+        // For now we use the sheet as an Input Library for SIPMath Tools instead.
+        // range.values = [["Values", "=VLOOKUP(A1,B4:C13,2,)", "=VLOOKUP($A$1,B4:D13,3,)"]]
+        // await context.sync();
 
         // Bonus adding the new HDR1 Random access random number generator for kicks
         range = sheettest.getRange("E3");
