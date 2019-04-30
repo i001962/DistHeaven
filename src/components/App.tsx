@@ -81,16 +81,16 @@ export default class App extends React.Component<AppProps, AppState> {
           uniform = jStat.uniform(0, 1),      // Three lines for corr uniform
           uniform2 = jStat.uniform(0, 1),     // Three lines for corr uniform
           outputdists = [uniform, uniform2];  // Three lines for corr uniform
-          // console.log(outputdists);
+          //console.log(outputdists);
         var samples = copula.map(function(x, row) { return outputdists[row].inv(x); });
-        console.log(samples);
+        //console.log(samples);
         // console.log(data[0]["0"]);
         //  console.log(selectedRange.values);
 
         // Queue a command to add a new table to contain the results
         // Using ProbabilityManagement.org SIPMath standard for sheetname and format of distribution
         // trials but can not name ranges programmatically
-        var sheettest = context.workbook.worksheets.getItem("PMTable");
+        var sheettest = context.workbook.worksheets.getItem("PM_Table");
         var cell = sheettest.getCell(0, 0);
         cell.load("address, values");
         await context.sync();
@@ -176,7 +176,7 @@ export default class App extends React.Component<AppProps, AppState> {
       <div className= 'ms-welcome' >
       <Header title='Generate Distributions' />
         <Content  buttonLabel = 'Create Uniform Dists' click = { this.createCorrelUnifs } />
-          <Content  buttonLabel = 'Delete sheet' click = { this.deleteWorksheet } />
+          <Content  buttonLabel = 'Delete last sheet' click = { this.deleteWorksheet } />
 
             </div>
         );
