@@ -3,7 +3,7 @@
 Excel Task Pane Add-in to create Monte Carlo Trials
 Current implementation creates 2 correlated uniform distributions.
 
-To use:
+## To use:
 npm install
 npm start
 
@@ -17,5 +17,5 @@ As a bonus a third uniform distribution is also created using the HDR1 Random Ac
 The nice thing about HDR1 is that it fits into one cell and works nicely with Excel's data table.
 
 
-To read other learning sources and learn how debug add-ins see:
+## To read other learning sources and learn how debug add-ins see:
 https://app.memphis.io/publish/Creating-Excel-Js-API-Taskpanel-Add-in-with-React/5cbe79f8af1274057ac0d3ad
