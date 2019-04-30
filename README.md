@@ -6,7 +6,7 @@ Current implementation creates 2 correlated uniform distributions.
 ## To use:
 - npm install
 - npm start
-
+- Visit https://localhost:3000/ to confirm no certificate errors
 - From excel 'sideload' the add-in using Insert->My Add-ins (dropdown menu to see developer add-ins)
 - Enter correlation coeff and number of trials into a row and select them. eg
 C1 = 0.7
@@ -19,3 +19,6 @@ D1 = 100
 
 ## To read other learning sources and learn how debug add-ins see:
 https://app.memphis.io/publish/Creating-Excel-Js-API-Taskpanel-Add-in-with-React/5cbe79f8af1274057ac0d3ad
+
+### Based on
+https://docs.microsoft.com/en-us/office/dev/add-ins/quickstarts/excel-quickstart-react
