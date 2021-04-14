@@ -26,4 +26,4 @@ To use these distributions and their trails in SIPMath models, you will need to 
 ## TODOs are found in app.tsx
 
 ## Publish, Deploy and learn more here
-https://app.memphis.io/publish/Creating-Excel-Js-API-Taskpanel-Add-in-with-React/5cbe79f8af1274057ac0d3ad
+https://app.popdoc.io/kevin/creating-excel-js-api-taskpanel-add-in-with-react/5cbe79f8af1274057ac0d3ad
